@@ -1,0 +1,25 @@
+$headerHeight:51px;
+.app-header{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index:100;
+  transition: background 0.3s ease-in-out;
+  background:white;
+  border-bottom:1px solid #ddd;
+  height:$headerHeight;
+  padding-left:15px;
+  .navbar-header{
+    height:$headerHeight;
+    line-height:$headerHeight;
+    img{
+      vertical-align: middle;
+    }
+  }
+}
+
+.app-body{
+  &.avoidHeader{
+    margin-top:$headerHeight;
+  }
+}

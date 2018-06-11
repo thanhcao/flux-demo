@@ -1,0 +1,103 @@
+.newItem{
+  border-bottom: 1px solid #e2e2e2;
+  padding:15px;
+  position:relative;
+  &:last-child{
+    border-bottom: none;
+  }
+  .story{
+    vertical-align: top;
+    display:inline-block;
+  }
+  .story1{
+    @include breakpoint(xs) {
+      width:100%;
+    }
+    @include breakpoint(sm) {
+      width:200px;
+    }
+    @include breakpoint(md) {
+      width:200px;
+    }
+    @include breakpoint(lg) {
+      width:200px;
+    }
+
+    .deadline{
+      line-height: 0.8125rem;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "nyt-franklin",arial,helvetica,sans-serif;
+      display: block;
+      color: #999;
+    }
+  }
+  .story2{
+    @include breakpoint(xs) {
+      width:100%;
+    }
+    @include breakpoint(sm) {
+      width:100%;
+    }
+    @include breakpoint(md) {
+      width:calc(100% - 420px);
+    }
+    @include breakpoint(lg) {
+      width:calc(100% - 420px);
+    }
+
+    .headline{
+      line-height: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: normal;
+      font-family: "cheltenham-normal-400",georgia,"times new roman",times,serif;
+      cursor:pointer;
+    }
+    .description{
+      line-height: 3.2rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: normal;
+      font-family: georgia,"times new roman",times,serif;
+      cursor:pointer;
+    }
+    .byline{
+      font-size: 1.1rem;
+      line-height: 0.75rem;
+      font-weight: 500;
+      font-style: normal;
+      font-family: "nyt-franklin",arial,helvetica,sans-serif;
+      align-self: flex-start;
+      margin: 11px 0 4px;
+      color: #999;
+    }
+  }
+  .story3{
+    @include breakpoint(xs) {
+      width:100%;
+      img{
+        width:100%;
+      }
+    }
+    @include breakpoint(sm) {
+      width:100%;
+      img{
+        width:100%;
+      }
+    }
+    @include breakpoint(md) {
+      width:210px;
+      img{
+        width:100%;
+      }
+    }
+    @include breakpoint(lg) {
+      width:210px;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+}

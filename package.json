@@ -1,0 +1,61 @@
+{
+  "name": "flux-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js --hot --port 3000",
+    "test": "jest",
+    "build:prod": "NODE_ENV='production' webpack -p --config webpack.prod.js --progress"
+  },
+  "author": "Thanh Cao",
+  "license": "Thanh Cao",
+  "private":true,
+  "devDependencies": {
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.1",
+    "babel-loader":"8.0.0-beta.0",
+    "@babel/cli": "7.0.0-beta.38",
+    "@babel/core": "7.0.0-beta.38",
+    "@babel/preset-env": "7.0.0-beta.38",
+    "@babel/preset-react": "7.0.0-beta.38",
+    "babel-plugin-transform-object-rest-spread":"7.0.0-beta.3",
+    "babel-plugin-transform-class-properties":"6.24.1",
+    "babel-plugin-transform-decorators-legacy":"1.3.4",
+    "babel-jest":"23.0.1",
+    "sass-loader": "6.0.6",
+    "sass-resources-loader": "1.3.1",
+    "css-loader":"0.28.9",
+    "style-loader": "0.19.1",
+    "resolve-url-loader":"2.2.1",
+    "node-sass": "4.7.2",
+    "jest":"23.1.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "uglifyjs-webpack-plugin": "1.1.6",
+    "html-webpack-plugin":"2.30.1",
+    "copy-webpack-plugin": "4.3.1"
+  },
+  "dependencies": {
+    "react-bootstrap": "0.32.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-router":"4.2.0",
+    "axios": "0.17.1",
+    "rxjs": "5.5.7",
+    "react-router-dom": "4.2.2",
+    "mobx":"3.4.1",
+    "mobx-react":"4.3.5"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "rootDir": "",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  }
+}
